@@ -8,33 +8,39 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Social from './components/Social';
-import {useState , useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import ClipLoader from "react-spinners/ClipLoader";
+
 
 
 
 function App() {
   const [loading , setLoading] = useState(false)
   useEffect(()=> {
-    setLoading(false)
-    setTimeout(()=> {
+    setLoading(true)
+    setTimeout(()=>{
       setLoading(false)
     })
-  },5000)
+  },1000)
 
-  const [mode, setmode] = useState("light");
-  const toggleMode = () => {
-    if (mode) {
-      setmode("dark")
-      document.body.style.backgroundColor ='#494949';
-    } else {
-      setmode("light")
-      document.body.style.backgroundColor ='yellow';
-    }
+  const [mode, setMode] = useState('light');
+  function toggleMode() {
+    setMode(mode === 'light' ? 'dark' : 'light');
   }
 
+  // const [mode, setmode] = useState("light");
+  // const toggleMode = () => {
+  //   if (mode) {
+  //     setmode("dark")
+  //     document.body.style.backgroundColor ='#494949';
+  //   } else {
+  //     setmode("light")
+  //     document.body.style.backgroundColor ='dark';
+  //   }
+  // }
+
   return (
-    <div className="App">
+    <div  className={`App ${mode === 'light' ? 'light-mode' : 'dark-mode'}`}>
       {
         loading?
 
@@ -46,7 +52,7 @@ function App() {
       :
       <div>
         <Header></Header>
-        <Homee toggleMode = {toggleMode}></Homee>
+        <Homee toggleMode={toggleMode}></Homee>
         <Download></Download>
         <About></About>
         <Projects></Projects>

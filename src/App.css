@@ -1,0 +1,21 @@
+.light-mode {
+    background-color: #e9d5a1;
+    color: #0c0c0c;
+  }
+  
+  .dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  h3 {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sigmar', cursive;
+    font-family: 'Source Code Pro', monospace;
+  }
+  h2 {
+    font-family: 'Mukta', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Sigmar', cursive;
+  font-family: 'Source Code Pro', monospace;
+  }

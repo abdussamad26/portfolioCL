@@ -5,8 +5,8 @@ function Projects() {
   return (
     <div>
         <section className='pb-5'>
-            <div className='container pt-4'>
-                <div className='row pt-5'>
+            <div className='container pt-5'>
+                <div className='row pb-5 pt-5'>
                     <h3 className='text-center pb-5'>Projects</h3>
                     <div className='col-lg-3 py-3 d-flex justify-content-center align-items-center'>
                       <div className='box'>

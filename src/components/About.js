@@ -3,11 +3,11 @@ import './About.css';
 
 function About() {
   return (
-    <div className='about'>
-        <section>
+    <div className="about">
+        <section className='pb-5'>
             <div className='container d-flex-justify-content-center align-items-center pt-5'>
                 <div className='row center'>
-                    <h3 className='text-center pt-5'>About</h3>
+                    <h3 className="text-center pb-5 pt-5">About</h3>
                     <div className='col-md-2 mt-5 d-flex justify-content-center align-items-center'>
                     <div class="card cardsam1 mb-5" style={{width:"18rem"}}>
                         <img src="myProfile.jpg" style={{padding:"6%"}} class="card-img-top" alt="..."/>
@@ -20,8 +20,8 @@ function About() {
                         </div>
                      </div>
                     </div>
-                    <div className='col-md-10 pb-3 d-flex justify-content-end align-items-center'>
-                        <div className='col-md-10'>
+                    <div className='col-sm-10 d-flex justify-content-end align-items-center'>
+                        <div className='col-sm-10'>
                         <div class="card">
                         <div class="card-header">
                             <svg  width={"1em"} height={"1em"} viewBox='1 1 1'>

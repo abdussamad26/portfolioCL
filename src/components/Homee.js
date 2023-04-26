@@ -3,6 +3,7 @@ import './Homee.css';
 import Typewriter from 'typewriter-effect';
 
 function Home(props) {
+  
   return (
     <div>
         <section>
