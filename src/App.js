@@ -16,12 +16,12 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   const [loading , setLoading] = useState(false)
-  useEffect(()=> {
+  useEffect(()=>{
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    })
-  },1000)
+    },3000)
+  },[])
 
   const [mode, setMode] = useState('light');
   function toggleMode() {
@@ -43,11 +43,12 @@ function App() {
     <div  className={`App ${mode === 'light' ? 'light-mode' : 'dark-mode'}`}>
       {
         loading?
-
-        <ClipLoader
+        <ClipLoader className='spinner'
         color={"black"}
         loading={loading}
-        size={150}
+        size={50}
+        aria-label="Loading Spinner"
+        data-testid="loader"
       />
       :
       <div>
@@ -61,9 +62,7 @@ function App() {
         <Social></Social>
       </div>
       }
-      
-      
-      
+     
     </div>
   );
 }

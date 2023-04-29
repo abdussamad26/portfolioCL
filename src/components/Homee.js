@@ -10,10 +10,10 @@ function Home(props) {
             <div className='container home'>
                 <div className='row'>
                   <div className='col-lg-12 d-flex justify-content-center'>
-                    <img style={{width:"110px"}} className='pt-5' src='lap-logo.png'></img>
+                    <img style={{width:"125px"}} className='pt-5' src='lap-img.png'></img>
                   </div>
-                  <h4 className='text-center pt-3 fw-bold fs-2'>Abdus Samad</h4>
-                  <div className='text-center text-uppercase fs-4 pt-1'>
+                  <h4 className='text-center pt-3 fw-bold fs-2'>Abdus Samad Portfolio</h4>
+                  <div className='text-center fs-4 pt-1'>
                   <Typewriter
                     options={{
                       strings: ['Hello', 'Im Abdus Samad','Front-End Developer'],

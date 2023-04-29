@@ -9,55 +9,55 @@ function Projects() {
                 <div className='row pb-5 pt-5'>
                     <h3 className='text-center pb-5'>Projects</h3>
                     <div className='col-lg-3 py-3 d-flex justify-content-center align-items-center'>
-                      <div className='box'>
-                      <div class="card cardsum">
-                          <div class="imgBx">
-                              <img className='border' src="ecom-logo.png" alt="images"/>
+                      <div className='box d-flex justify-content-center align-items-center'>
+                        <div class="stack">
+                          <div class="card cardsam">
+                            <div class="image">
+                            <img style={{height:"100%",width:"100%"}} className='border' src="ecom-logo.png" alt="images"/>
+                            </div>
+                            <a className='proj-link' href='https://asamad-chairy-ecommerce.netlify.app'><span>view Projects</span></a>
                           </div>
-                          <div class="details">
-                              <h2>Ecommerce-Chairy<br/><span><a className='ms-4' href='https://asamad-chairy-ecommerce.netlify.app'>View Project</a></span></h2>
-                          </div>
-                        </div>
                       </div>
-                    </div>
+                      </div>
+                   </div>
                     <div className='col-lg-3 py-3 d-flex justify-content-center align-items-center'>
-                      <div className='box'>
-                      <div class="card cardsum">
-                          <div class="imgBx">
-                              <img className='border' src="stack-img" alt="images"/>
+                      <div className='box d-flex justify-content-center align-items-center'>
+                        <div class="stack">
+                          <div class="card cardsam">
+                            <div class="image">
+                            <img style={{height:"100%",width:"100%"}} className='border' src="stack-img" alt="images"/>
+                            </div>
+                            <a className='proj-link' href='https://asamad-stack.netlify.app'><span>view Projects</span></a>
                           </div>
-                          <div class="details">
-                              <h2>Stack-Web<br/><span><a className='ms-4' href='https://asamad-stack.netlify.app'>View Project</a></span></h2>
-                          </div>
-                        </div>
                       </div>
-                    </div>
+                      </div>
+                   </div>
                     <div className='col-lg-3 py-3 d-flex justify-content-center align-items-center'>
-                      <div className='box'>
-                      <div class="card cardsum">
-                          <div class="imgBx">
-                              <img className='border' src="seedkaro-img.jpg" alt="images"/>
+                      <div className='box d-flex justify-content-center align-items-center'>
+                        <div class="stack">
+                          <div class="card cardsam">
+                            <div class="image">
+                            <img style={{height:"100%",width:"100%"}} className='border' src="seedkaro-img.jpg" alt="images"/>
+                            </div>
+                            <a className='proj-link' href='https://asamad-seedkaro.netlify.app'><span>view Projects</span></a>
                           </div>
-                          <div class="details">
-                              <h2>SEED karo<br/><span><a className='ms-4' href='https://asamad-seedkaro.netlify.app'>View Project</a></span></h2>
-                          </div>
-                        </div>
                       </div>
-                    </div>
+                      </div>
+                   </div>
                     <div className='col-lg-3 py-3 d-flex justify-content-center align-items-center'>
-                      <div className='box'>
-                      <div class="card cardsum">
-                          <div class="imgBx">
-                              <img className='border' src="webflix-img.png" alt="images"/>
+                      <div className='box d-flex justify-content-center align-items-center '>
+                        <div class="stack">
+                          <div class="card cardsam">
+                            <div class="image">
+                            <img style={{height:"100%",width:"100%"}} className='border' src="netflix-logo.jpg" alt="images"/>
+                            </div>
+                            <a className='proj-link' href=''><span>view Projects</span></a>
                           </div>
-                          <div class="details">
-                              <h2>Webflix<br/><span><a className='ms-4' href=''>View Project</a></span></h2>
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                </div>
+                      </div>
+                   </div>
             </div>
+          </div>
         </section>
     </div>
   )

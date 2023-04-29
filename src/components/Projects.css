@@ -1,160 +1,137 @@
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+img {
+  display: block;
+  max-width: 100%;
+}
+.proj-link {
+  margin-left: 14%;
+}
+.stack {
+  width: 85%;
+  max-width: 400px;
+  transition: 0.25s ease;
+}
+.stack:hover {
+  transform: rotate(5deg);
+}
+.stack:hover .card:before {
+  transform: translatey(-2%) rotate(-4deg);
+}
+.stack:hover .card:after {
+  transform: translatey(2%) rotate(4deg);
+}
+
 .cardsam {
-    width: 17em;
-    height: 22.5em;
-    background: #424141;
-    transition: 1s ease-in-out;
-    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    flex-direction: column;
+  aspect-ratio: 3/2;
+  border: 2px solid;
+  background-color: #FFF;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+  padding: 5% 5% 15% 5%;
+}
+.cardsam:before, .cardsam:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid;
+  background-color: #FFF;
+  transform-origin: center center;
+  z-index: -1;
+  transition: 0.15s ease;
+  top: 0;
+  left: 0;
+}
+.cardsam:before {
+  transform: translatey(-2%) rotate(-6deg);
+}
+.cardsam:after {
+  transform: translatey(2%) rotate(6deg);
+}
+
+.image {
+  width: 100%;
+  border: 2px solid;
+  background-color: #EEE;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1/1) {
+  .browser-warning {
+    display: none;
   }
-  
-  .cardsam span {
-    font-weight: bold;
-    color: white;
-    text-align: center;
+}
+@media (max-width : 767px) {
+  img {
     display: block;
-    font-size: 1em;
+    max-width: 100%;
   }
   
-  .cardsam .info {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    font-size: 0.72em;
-    margin: 1em;
+  .stack {
+    width: 85%;
+    max-width: 200px;
+    transition: 0.25s ease;
+  }
+  .stack:hover {
+    transform: rotate(5deg);
+  }
+  .stack:hover .card:before {
+    transform: translatey(-2%) rotate(-4deg);
+  }
+  .stack:hover .card:after {
+    transform: translatey(2%) rotate(4deg);
   }
   
-  .cardsam .img {
-    width: 4.8em;
-    height: 4.8em;
-    background: white;
-    border-radius: 15px;
-    margin: auto;
-  }
-  
-  .cardsam .share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  .cardsam a {
-    color: white;
-    transition: .4s ease-in-out;
-  }
-  
-  .cardsam a:hover {
-    color: red;
-  }
-  
-  .cardsam button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    transition: .4s ease-in-out;
-  }
-  
-  .cardsam button:hover {
-    background: red;
-    color: white;
-    cursor: pointer;
-  }
-  
-  
-  .box{
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
-    margin: 0 auto;
-  }
-  .cardsum{
+  .cardsam {
+    aspect-ratio: 3/2;
+    border: 2px solid;
+    background-color: #FFF;
     position: relative;
-    width: 250px;
-    height: 250px;
-    background: #fff;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    transition: 0.15s ease;
+    cursor: pointer;
+    padding: 5% 5% 15% 5%;
   }
-  .cardsum:before,
-  .cardsum:after
-  {
-    content:"";
+  .cardsam:before, .cardsam:after {
+    content: "";
+    display: block;
     position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid;
+    background-color: #FFF;
+    transform-origin: center center;
+    z-index: -1;
+    transition: 0.15s ease;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: 0.5s;
-    z-index:-1;
   }
-  .cardsum:hover:before{
-  transform: rotate(20deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  .cardsam:before {
+    transform: translatey(-2%) rotate(-6deg);
   }
-  .cardsum:hover:after{
-  transform: rotate(10deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
-  }
-  .cardsum .imgBx{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  background: #222;
-  transition: 0.5s;
-  z-index: 1;
+  .cardsam:after {
+    transform: translatey(2%) rotate(6deg);
   }
   
-  .cardsum:hover .imgBx
-  {
-    bottom: 80px;
+  .image {
+    width: 100%;
+    border: 2px solid;
+    background-color: #EEE;
+    aspect-ratio: 1/1;
+    position: relative;
   }
-
-  .cardsum .imgBx img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  
+  .browser-warning {
+    margin-bottom: 4rem;
   }
-
-  .cardsum .details{
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      height: 60px;
-      text-align: center;
+  .proj-link {
+    margin-left: 24%;
+    height: 16%;
   }
-
-  .cardsum .details h2{
-   margin: 0;
-   padding: 0;
-   font-weight: 600;
-   font-size: 20px;
-   color: #777;
-   text-transform: uppercase;
-  } 
-
-  .cardsum .details h2 span{
-  font-weight: 500;
-  font-size: 16px;
-  color: #f38695;
-  display: block;
-  margin-top: 5px;
-   } 
+}
